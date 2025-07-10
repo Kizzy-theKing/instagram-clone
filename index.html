@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Feed Mockup</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/home.css" />
+
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="top-bar">
+        <h1>Instagram</h1>
+        <div class="top-icons">
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-regular fa-envelope"></i></span>
+        </div>
+      </header>
+
+      <div class="scroll-container">
+        <div class="stories">
+          <div class="story">
+            <img src="images/itadori.jpg" alt="Story" />
+            <span class="story-name">Your story</span>
+          </div>
+          <div class="story">
+            <img src="images/cat.jpg" alt="Story" />
+            <span class="story-name">dudu</span>
+          </div>
+          <div class="story">
+            <img src="images/dog.jpg" alt="Story" />
+            <span class="story-name">victor</span>
+          </div>
+          <div class="story">
+            <img src="images/real.png" alt="Story" />
+            <span class="story-name">Real</span>
+          </div>
+          <div class="story">
+            <img src="images/audi.jpg" alt="Story" />
+            <span class="story-name">TOM</span>
+          </div>
+          <div class="story">
+            <img src="images/ronaldo.jpg" alt="Story" />
+            <span class="story-name">Frank</span>
+          </div>
+          <div class="story">
+            <img src="images/marvel.jpg" alt="Story" />
+            <span class="story-name">Marvel</span>
+          </div>
+          <div class="story">
+            <img src="images/gt63.jpg" alt="Story" />
+            <span class="story-name">John</span>
+          </div>
+        </div>
+
+        <div class="feed">
+          <!-- Post 1 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/olamide.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/yabaleft.jpg" alt="User" class="user-avatar" />
+                <span class="username">yabaleftonline247</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">1,234 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">yabaleftonline247</span>
+              <span class="caption-text">This is my awesome post caption #instagram</span>
+              <div class="post-timestamp">2 HOURS AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 24 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/insatpost.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/insta.jpg" alt="User" class="user-avatar" />
+                <span class="username">Instablog</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">234 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">Instablog</span>
+              <span class="caption-text">Another great photo!</span>
+              <div class="post-timestamp">10 MINUTES AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 2 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/wiz.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/wizP.jpg" alt="User" class="user-avatar" />
+                <span class="username">Wizkid</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">678 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">Wizkid</span>
+              <span class="caption-text">Loving the vibes 🌞</span>
+              <div class="post-timestamp">1 HOUR AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 10 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+        
+
+          <!-- Post 4 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/audi.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/cat.jpg" alt="User" class="user-avatar" />
+                <span class="username">Victor</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">678 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">Victor</span>
+              <span class="caption-text">Loving the vibes 🌞</span>
+              <div class="post-timestamp">1 HOUR AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 10 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+          <!-- Post 5 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/ironman.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/marvel.jpg" alt="User" class="user-avatar" />
+                <span class="username">Marvel Studio</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">678 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">Marvel Studio</span>
+              <span class="caption-text">Peak 🌞</span>
+              <div class="post-timestamp">1 HOUR AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 10 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+        
+
+          <!-- Post 6 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/real post.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/real.png" alt="User" class="user-avatar" />
+                <span class="username">Real Madrid</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">678 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">Real Madrid</span>
+              <span class="caption-text">Galacticos!!</span>
+              <div class="post-timestamp">1 HOUR AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 10 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+        
+
+          <!-- Post 7 -->
+          <div class="post">
+            <div class="post-image-container">
+              <img src="images/olamide.jpg" alt="Post content" class="post-image" />
+              <div class="feed-header-overlay">
+                <img src="images/yabaleft.jpg" alt="User" class="user-avatar" />
+                <span class="username">John</span>
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button class="like-btn" onclick="likePost(this)"><i class="fa-solid fa-heart"></i></button>
+              <button class="comment-btn"><i class="fa-regular fa-comment"></i></button>
+              <button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+
+            <div class="likes-count">678 likes</div>
+
+            <div class="post-caption">
+              <span class="caption-username">John</span>
+              <span class="caption-text">Loving the vibes 🌞</span>
+              <div class="post-timestamp">1 HOUR AGO</div>
+            </div>
+
+            <div class="comments-section">
+              <button class="view-comments">View all 10 comments</button>
+            </div>
+
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." class="comment-input" />
+              <button class="post-btn" disabled>Post</button>
+            </div>
+          </div>
+       
+
+      <nav class="bottom-nav">
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+        <a href="#"><i class="fa-solid fa-clapperboard"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+      </nav>
+    </div>
+<!-- Javascript -->
+    <script src="JS/home.js"></script>
+  </body>
+</html>
