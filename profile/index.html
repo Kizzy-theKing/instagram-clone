@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/profile.css">  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/profile.css" />
+  <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-    di
+  <header class="top-bar">
+    <h1>kizzy_theking</h1>
+    <div class="top-icons">
+      <div class="notif">
+        🔔 <span class="badge">9+</span>
+      </div>
+      <span><i class="fa-regular fa-square-plus"></i></span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-header">
+      <figure class="avatar">
+        <img src="../images/itadori.jpg" alt="Profile img" />
+      </figure>
+      <article class="profile-info">
+        <h2>Sekooni King</h2>
+        <div class="stats">
+          <span><strong>0</strong> <br>posts</span>
+          <span><strong>54</strong> <br>followers</span>
+          <span><strong>91</strong> <br>following</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="profile-actions">
+      <button>Edit profile</button>
+      <button>Share profile</button>
+    </section>
+
+    <nav class="tabs">
+      <button class="active" aria-label="Posts">📷</button>
+      <button aria-label="Reels">🎞️</button>
+      <button aria-label="Tagged">👤</button>
+    </nav>
+
+    <section class="empty-state">
+      <p>Capture the moment with a friend</p>
+      <a href="#">Create your first post</a>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+    <a href="#"><i class="fa-solid fa-clapperboard"></i></a>
+    <a href="profile/index.html"><img src="images/itadori.jpg" alt="user" /></a>
+  </nav>
+
+  <!-- custom JS -->
+    <script src="js/profile.js"></script>
 </body>
-<!-- Custom Javascript -->
-<script src="js/profile.js"></script>
+
 </html>
